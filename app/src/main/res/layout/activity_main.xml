@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="360dp"
+        android:layout_height="640dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar_top"
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/app_name" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--
+    <ScrollView
+            android:id="@+id/activity_main"
+            android:layout_width="360dp"
+            android:layout_height="496dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="56dp">
+
+        <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_item_photo"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    tools:src="@android:color/darker_gray" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/greyish_brown"
+                    android:lineSpacingExtra="8sp"
+                    tools:text="Amanda Krebber"
+                    android:font="@font/rubikregular"
+                    android:layout_marginLeft="78dp"
+                    android:layout_marginRight="158dp"
+                    android:paddingTop="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/french_gray"
+                    android:lineSpacingExtra="8sp"
+                    android:font="@font/rubikregular"
+                    android:layout_marginLeft="78dp"
+                    android:layout_marginTop="35dp"
+                    tools:text="monte.wyman@yahoo.com"/>
+        </RelativeLayout>
+    </ScrollView>
+-->
+
+    <!-- <Button android:layout_width="61dp" android:layout_height="61dp"
+             android:layout_marginRight="13dp"
+             android:layout_marginLeft="286dp"
+             android:layout_marginBottom="63dp"
+             android:layout_marginTop="516dp"
+             android:background="@drawable/circle"
+             android:drawableTop="@drawable/ic_contact_add"
+             android:paddingTop="20dp"
+
+     /> -->
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="50dp"
+            android:id="@+id/list_contact"
+            android:name="com.example.contact.ItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".ItemFragment"
+            tools:listitem="@layout/user_item" />
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="61dp" android:layout_height="61dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="286dp"
+            android:layout_marginBottom="63dp"
+            android:layout_marginTop="516dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_contact_add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:fabSize="normal" />
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/btm_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/colorNavigationIcon"
+            app:itemIconTint="@color/bicsay"
+            app:itemTextColor="@color/colorNavigationText"
+            app:menu="@menu/bottomnavigation"/>
+
+
+    <!--
+    <FrameLayout
+            android:id="@+id/frame_item"
+            android:layout_width="360dp"
+            android:layout_height="496dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="56dp">
+    </FrameLayout>
+    <FrameLayout
+            android:id="@+id/frame_add"
+            android:layout_width="360dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="360dp">
+    </FrameLayout>
+-->
+
+</RelativeLayout>

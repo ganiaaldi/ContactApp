@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+                android:id="@+id/inbox"
+                android:title="@string/inbox"
+                android:enabled="true"
+                android:textSize="10sp"
+                android:icon="@drawable/ic_nav_inbox" />
+
+        <item
+                android:id="@+id/group"
+                android:title="@string/group"
+                android:enabled="true"
+                android:icon="@drawable/ic_nav_group"/>
+
+
+        <item
+                android:id="@+id/account"
+                android:title="@string/account"
+                android:enabled="true"
+                android:icon="@drawable/ic_nav_contact_selected"/>
+
+    </menu>

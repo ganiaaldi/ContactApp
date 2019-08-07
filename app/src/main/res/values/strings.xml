@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ContactApp</string>
+    <string name="inbox">Inbox</string>
+    <string name="group">Group</string>
+    <string name="account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hint_email">Email</string>
+    <string name="hint_nama">Nama</string>
+</resources>
